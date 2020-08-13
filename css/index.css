@@ -1,0 +1,379 @@
+/*顶部区域*/
+.top{
+    height: 60px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+}
+.top .top_in{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    /*background-color: gold;*/
+}
+.top .top_left{
+    width: 190px;
+    height: 100%;
+    float: left;
+}
+.top .top_left>h1{
+    width: 100%;
+    height: 100%;
+}
+.top .top_left>h1>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/nubia-logo.png");
+    background-size: 190px 60px;
+}
+.top .top_right{
+    width: 740px;
+    height: 100%;
+    float: right;
+}
+.top .top_nav{
+    float: left;
+    width: 550px;
+    height: 100%;
+    /*background-color: pink;*/
+}
+.top .top_nav>li{
+    float: left;
+}
+.top .top_nav>li:hover a{
+    color: #ccc;
+}
+.top .top_nav>li>a{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 60px;
+    margin-left: 35px;
+}
+.top .top_login{
+    float: right;
+    width: 150px;
+    height: 100%;
+    /*background-color: tomato;*/
+}
+.top .top_login>li{
+    height: 60px;
+    width: 75px;
+    float: left;
+    /*background-color: white;*/
+    opacity: 10;
+    box-sizing: border-box;
+}
+.top .top_login>li img{
+    margin-left: 22px;
+    margin-top: 14px;
+}
+.top .top_login>li:hover{
+    background-color: red;
+}
+/*广告区域*/
+.banner{
+    height: 855px;
+    width: 100%;
+    /*background-color: blue;*/
+}
+.banner .figure{
+    height: 600px;
+    width: 100%;
+    /*background-color: green;*/
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+.banner .figure>img{
+    height: 100%;
+    margin: 0 -100%;
+}
+.banner .figure>ol {
+    width: 150px;
+    height: 2px;
+    /*background: red;*/
+    left: 50%;
+    margin-left: -75px;
+    bottom: 20px;
+    position: absolute;
+    padding-left: 7px;
+    box-sizing: border-box;
+}
+.banner .figure>ol>li{
+    width: 40px;
+    height: 2px;
+    background: #ccc;
+    margin-left: 5px;
+    float: left;
+    transition: all 1.5s;
+}
+.banner .figure>ol>li:hover{
+    background: red;
+    transform: scale(1.2,2);
+}
+.banner .video{
+    width: 100%;
+    height: 250px;
+    /*background-color: skyblue;*/
+    margin-top: 5px;
+}
+.banner .video>ul{
+    width: 100%;
+    height: 100%;
+    /*background-color: green;*/
+    display: flex;
+    justify-content: space-between;
+}
+.banner .video>ul>li{
+    width: 400px;
+    height: 250px;
+    float: left;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.banner .video>ul>li>img{
+    height: 100%;
+    margin: 0 -100%;
+}
+.banner .video .video_info{
+    position: absolute;
+    width: 100%;
+    height: 155px;
+    bottom: 0;
+    opacity: 0;/*作用: 设置元素的透明度, 特点: 子元素也会跟着透明*/
+}
+.banner .video .video_info>img{
+    width: 46px;
+    height: 46px;
+}
+.banner .video .video_info>h3{
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+}
+.banner .video .video_info>p{
+    color: white;
+}
+.banner .video>ul>li:hover .video_info{
+    opacity: 1;
+}
+.banner .video>ul>li:hover>img{
+    opacity: 0.5;
+}
+.banner .video>ul>li:hover .video_info>img{
+    animation: sport 2s 0.5s ease-in-out infinite;
+}
+@keyframes sport {
+    20%{ transform: scale(0.8);}
+    40%{ transform: scale(1.2);}
+    60%{ transform: scale(0.9);}
+    80%{ transform: scale(1);}
+    100%{ transform: scale(1);}
+}
+/*内容区域*/
+.content{
+    height: 1883px;
+    width: 100%;
+    /*background-color: yellow;*/
+}
+.content>dl{
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content>dl>dt{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.content>dl>dt>h3{
+    font-size: 35px;
+    color: #333;
+}
+.content>dl>dt>p{
+    margin-top: 20px;
+    color: #e8340e;
+}
+.content .content_watch{
+    width: 1200px;
+    height: 1200px;
+}
+.content .content_watch>li{
+    float: left;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.content .content_watch>li:nth-child(1){
+    width: 1200px;
+    height: 395px;
+    margin-bottom: 10px;
+}
+.content .content_watch>li:nth-child(2){
+    width: 395px;
+    height: 795px;
+    margin-right: 10px;
+}
+.content .content_watch>li:nth-child(3){
+    width: 795px;
+    height: 390px;
+    margin-bottom: 10px;
+}
+.content .content_watch>li:nth-child(4){
+    width: 390px;
+    height: 395px;
+    margin-right: 10px;
+}
+.content .content_watch>li:nth-child(5){
+    width: 395px;
+    height: 395px;
+}
+.content .content_watch>li:nth-child(1)>img{
+    width: 970px;
+    transform: scale(0.5,0.5);
+    margin-left: -200px;
+    transition: margin-left 1.5s;
+}
+.content .content_watch>li:nth-child(1):hover>img{
+    margin-left: 0;
+}
+.content .content_watch>li:nth-child(3)>img{
+    margin-left: 200px;
+    transition: all 1.5s;
+}
+.content .content_watch>li:nth-child(3):hover>img{
+    margin-left: 0;
+}
+.content dl dd ul>li .fangda{
+    transition: transform 1.5s;
+}
+.content dl dd ul>li:hover .fangda{
+    transform: scale(1,1);
+}
+.content dl dd ul>li>img{
+    width: 100%;
+    transform: scale(0.7,0.7);
+}
+.content .content_watch .watch_des{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 20px;
+    text-align: center;
+}
+.content .content_watch>li:nth-child(1) .watch_des{
+    left: 0;
+    margin-left: 900px;
+    bottom: 130px;
+}
+.content .content_watch .watch_des>h4{
+    font-size: 20px;
+    color: #000;
+}
+.content .content_watch .watch_des>span{
+    display: inline-block;
+    width: 108px;
+    line-height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.content .content_watch .watch_des>span>a{
+    color: #000;
+}
+.content .content_phone{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .content_phone>li{
+    float: left;
+    width: 295px;
+    height: 300px;
+    /*margin-right: 5px;*/
+    background-color: white;
+}
+.content .content_phone>li>p{
+    text-align: center;
+    margin-top: 25px;
+}
+/*底部区域*/
+.footer{
+    height: 220px;
+    width: 100%;
+    background-color: white;
+}
+.footer>div{
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    /*background-color: yellow;*/
+}
+.footer>div>div:nth-child(n+2){
+     margin-left: 8px;
+ }
+.footer>div>div{
+    float: left;
+    height: 100%;
+    width: 160px;
+    padding-top: 20px;
+    text-align: center;
+}
+.footer>div>div>h5{
+    font-size: 18px;
+    color: black;
+}
+.footer>div>div a{
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    line-height: 20px;
+}
+.footer>div>div a:hover{
+    color: red;
+}
+/*侧边栏*/
+.sidebar{
+    width: 50px;
+    height: 167px;
+    /*background-color: yellow;*/
+    position: fixed;
+    right: 2px;
+    bottom: 50px;
+}
+.sidebar ul{
+    width: 100%;
+    height: 100%;
+}
+.sidebar ul li{
+    width: 100%;
+    height: 30%;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-top: 3%;
+    text-align: center;
+}
+.sidebar ul li img{
+    margin-top: 9px;
+}
+.sidebar ul li a p{
+    font-size: 20px;
+    line-height: 50px;
+    color: black;
+}
+.sidebar ul li:last-child a p{
+    transform: scale(1.5,1.5);
+}
+
